@@ -1,0 +1,61 @@
+# ========================================================================
+# Pi-hole Whitelist
+# ------------------------------------------------------------------------
+# PURPOSE:
+#   This file defines domains that are essential to business operations
+#   and should be excluded from Pi-hole blocking.
+#
+#   It is imported into both Pi-hole servers in a high-availability (HA)
+#   configuration using rsync and cron. Domains listed here bypass
+#   Pi-hole's gravity-based blocking to ensure reliable access.
+#
+# FORMAT:
+#   - Plaintext file
+#   - One fully-qualified domain name (FQDN) per line
+#   - No wildcards, IPs, or subdomain patterns
+#   - Comment lines begin with "#"
+#
+# USAGE:
+#   Hosted on GitHub and imported via:
+#     curl -sSL https://raw.githubusercontent.com/nths-it/pihole-whitelist/main/whitelist.txt | xargs -L1 pihole --white-list
+#
+#   Or used in gravity sync scripts between nodes:
+#     rsync /etc/pihole/whitelist.txt <backup-node>:/etc/pihole/
+#     systemctl restart pihole-FTL
+#
+# MAINTAINER:
+#   NTHS IT Department - help@nthsclinic.com
+#
+# LAST UPDATED:
+#   [Insert Date Here]
+#
+# CATEGORIES INCLUDED:
+#   - Microsoft 365 / Windows Update
+#   - Zoom and video conferencing
+#   - Slack and communication
+#   - CDNs and static assets (Google, Cloudfront, etc.)
+#   - Authentication and SSO portals
+#   - Business-critical cloud platforms
+#
+# NOTES:
+#   This file should NOT include advertising domains or tracking services.
+#   Review additions carefully to prevent accidental whitelist of threats.
+# ========================================================================
+microsoft.com
+windowsupdate.com
+login.microsoftonline.com
+graph.microsoft.com
+zoom.us
+zoom.us.com
+us04web.zoom.us
+slack.com
+dropbox.com
+gstatic.com
+fonts.googleapis.com
+ajax.googleapis.com
+s3.amazonaws.com
+cloudfront.net
+akadns.net
+akamai.net
+office365.com
+teams.microsoft.com
