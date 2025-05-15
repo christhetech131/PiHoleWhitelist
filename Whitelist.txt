@@ -17,17 +17,17 @@
 #
 # USAGE:
 #   Hosted on GitHub and imported via:
-#     curl -sSL https://raw.githubusercontent.com/nths-it/pihole-whitelist/main/whitelist.txt | xargs -L1 pihole --white-list
+#     curl -sSL https://raw.githubusercontent.com/christhetech131/PiHoleWhitelist/refs/heads/main/Whitelist.txt | xargs -L1 pihole --white-list
 #
 #   Or used in gravity sync scripts between nodes:
 #     rsync /etc/pihole/whitelist.txt <backup-node>:/etc/pihole/
 #     systemctl restart pihole-FTL
 #
 # MAINTAINER:
-#   NTHS IT Department - help@nthsclinic.com
+#   Christopher Galati
 #
 # LAST UPDATED:
-#   [Insert Date Here]
+#   05/15/2025
 #
 # CATEGORIES INCLUDED:
 #   - Microsoft 365 / Windows Update
@@ -41,6 +41,7 @@
 #   This file should NOT include advertising domains or tracking services.
 #   Review additions carefully to prevent accidental whitelist of threats.
 # ========================================================================
+
 microsoft.com
 windowsupdate.com
 login.microsoftonline.com
