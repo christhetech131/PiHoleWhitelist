@@ -42,21 +42,97 @@
 #   Review additions carefully to prevent accidental whitelist of threats.
 # ========================================================================
 
+# Microsoft 365 / Azure AD / SSO / Teams
 microsoft.com
-windowsupdate.com
+office.com
+office365.com
+outlook.office365.com
 login.microsoftonline.com
 graph.microsoft.com
+teams.microsoft.com
+aadcdn.msftauth.net
+aadcdn.msauth.net
+substrate.office.com
+outlook.office.com
+msocdn.com
+
+# Windows Update / Microsoft Services
+windowsupdate.com
+update.microsoft.com
+sls.update.microsoft.com
+v10.events.data.microsoft.com
+ctldl.windowsupdate.com
+dl.delivery.mp.microsoft.com
+emdl.ws.microsoft.com
+ntservicepack.microsoft.com
+
+# Zoom
 zoom.us
 zoom.us.com
 us04web.zoom.us
+zoomgov.com
+stun.l.google.com
+
+# Slack
 slack.com
-dropbox.com
+slack-edge.com
+slack-files.com
+
+# Google APIs and Services (used by third-party apps and embedded resources)
+google.com
 gstatic.com
 fonts.googleapis.com
 ajax.googleapis.com
+accounts.google.com
+apis.google.com
+
+# Dropbox (for shared files and IT logistics)
+dropbox.com
+dropboxusercontent.com
+
+# Amazon Web Services (CDNs, licensing, cloud content)
+amazonaws.com
 s3.amazonaws.com
 cloudfront.net
-akadns.net
+
+# Apple (if any macOS/iOS devices or software are used)
+apple.com
+icloud.com
+push.apple.com
+
+# Akamai and CDN Infrastructure
 akamai.net
-office365.com
-teams.microsoft.com
+akadns.net
+akamaiedge.net
+akamaitechnologies.com
+
+# GitHub (for scripts, lists, developer tools)
+github.com
+raw.githubusercontent.com
+
+# Time Servers and NTP
+time.apple.com
+time.windows.com
+time.nist.gov
+
+# Cloudflare (popular DNS and CDN)
+cloudflare.com
+1dot1dot1dot1.cloudflare-dns.com
+
+# Network Tools & Monitoring (optional, if used internally)
+speedtest.net
+ooklaserver.net
+
+# Authentication and SSO Portals (if used)
+auth0.com
+okta.com
+
+# Healthcare and Clinical Tools (customize as needed)
+epic.com
+cerner.com
+athenahealth.com
+
+# Others (Misc Infrastructure)
+live.com
+msn.com
+bing.com
